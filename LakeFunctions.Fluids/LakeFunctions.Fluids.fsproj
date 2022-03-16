@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Shape.fs" />
+    <Compile Include="Bend.fs" />
+    <Compile Include="BendCorrect.fs" />
+    <Compile Include="hydrodynamics.fs" />
+    <Compile Include="MiterElbow.fs" />
+    <Compile Include="Orrifice.fs" />
+    <Compile Include="RectangleBend.fs" />
+    <Compile Include="Reducer.fs" />
+    <Compile Include="SingleMiterElbow.fs" />
+    <Compile Include="Slurry.fs" />
+    <Compile Include="Spliters.fs" />
+    <Compile Include="Vanes.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MathNet.Numerics.FSharp" Version="4.15.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Databases\Databases.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="6.0.3" />
+  </ItemGroup>
+
+</Project>

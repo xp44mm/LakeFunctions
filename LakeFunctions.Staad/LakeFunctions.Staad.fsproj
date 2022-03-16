@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Staad.fs" />
+    <Compile Include="Steel.fs" />
+    <Compile Include="Rectangle.fs" />
+    <Compile Include="ShapeSteel.fs" />
+    <Compile Include="CombSection.fs" />
+    <Compile Include="Pipe.fs" />
+    <Compile Include="Loads.fs" />
+    <Compile Include="Checker.fs" />
+    <Compile Include="Plate.fs" />
+    <Compile Include="Rib.fs" />
+    <Compile Include="Stable.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MathNet.Numerics.FSharp" Version="4.15.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Databases\Databases.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="6.0.3" />
+  </ItemGroup>
+
+</Project>

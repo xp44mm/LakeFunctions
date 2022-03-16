@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+    <GenerateProgramFile>false</GenerateProgramFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="AbsorberCalcTest.fs" />
+    <Compile Include="AbsorberWithUndertrayTest.fs" />
+    <Compile Include="DewateringTest.fs" />
+    <Compile Include="EquipmentsTest.fs" />
+    <Compile Include="FluidTest.fs" />
+    <Compile Include="IdealGasTest.fs" />
+    <Compile Include="InsulationTest.fs" />
+    <Compile Include="LimestoneTest.fs" />
+    <Compile Include="MaterialPropertiesTest.fs" />
+    <Compile Include="MotorTest.fs" />
+    <Compile Include="PerfCalcTest.fs" />
+    <Compile Include="SaturWaterTest.fs" />
+    <Compile Include="StaadTest.fs" />
+    <Compile Include="UnitConverterTest.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LakeFunctions.Equipments\LakeFunctions.Equipments.fsproj" />
+    <ProjectReference Include="..\LakeFunctions.Fluids\LakeFunctions.Fluids.fsproj" />
+    <ProjectReference Include="..\LakeFunctions.Staad\LakeFunctions.Staad.fsproj" />
+    <ProjectReference Include="..\LakeFunctions\LakeFunctions.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="6.0.3" />
+  </ItemGroup>
+
+</Project>

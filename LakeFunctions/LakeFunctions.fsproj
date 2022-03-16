@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Math.fs" />
+    <Compile Include="UnitConverter.fs" />
+    <Compile Include="PerfCalc.fs" />
+    <Compile Include="Performance.fs" />
+    <Compile Include="AbsorberCalc.fs" />
+    <Compile Include="absorberWithUndertray.fs" />
+    <Compile Include="Additive.fs" />
+    <Compile Include="MaterialProperties.fs" />
+    <Compile Include="Air.fs" />
+    <Compile Include="SaturWater.fs" />
+    <Compile Include="Gas.fs" />
+    <Compile Include="Atmosphere.fs" />
+    <Compile Include="Coal.fs" />
+    <Compile Include="Combustion.fs" />
+    <Compile Include="Compound.fs" />
+    <Compile Include="Liquid.fs" />
+    <Compile Include="Dewatering.fs" />
+    <Compile Include="GasFlow.fs" />
+    <Compile Include="IdealGas.fs" />
+    <Compile Include="GasFlowPerf.fs" />
+    <Compile Include="Energy.fs" />
+    <Compile Include="LiquidPerf.fs" />
+    <Compile Include="Limestone.fs" />
+    <Compile Include="ggh.fs" />
+    <Compile Include="GasBalance.fs" />
+    <Compile Include="GasCalc.fs" />
+    <Compile Include="GasInput.fs" />
+    <Compile Include="GasVolume.fs" />
+    <Compile Include="Hydrocyclone.fs" />
+    <Compile Include="LiquidCalc.fs" />
+    <Compile Include="VacuumFilter.fs" />
+    <Compile Include="Liquids.fs" />
+    <Compile Include="LiquidPHOF.fs" />
+    <Compile Include="LiquidVolume.fs" />
+    <Compile Include="Oxiair.fs" />
+    <Compile Include="Removal.fs" />
+    <Compile Include="TowerSize.fs" />
+    <Compile Include="TowerCalc.fs" />
+    <Compile Include="Tower.fs" />
+    <Compile Include="Validation.fs" />
+    <Compile Include="WaterBalance.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MathNet.Numerics" Version="4.15.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Databases\Databases.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="6.0.3" />
+  </ItemGroup>
+
+</Project>
